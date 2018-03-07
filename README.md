@@ -1,5 +1,5 @@
 # Leonard's 1 Minute Elevator Pitch... of himself! 
-## [Hosted on Github Pages, clickie!]https://shizukesa92.github.io/Leonard-s-1-Minute-Elevator-Pitch/)
+## [Hosted on Github Pages, clickie!](https://shizukesa92.github.io/Leonard-s-1-Minute-Elevator-Pitch/)
 
 ... or a convenient excuse for some Javascript at that time. Don't take it too seriously.
 
