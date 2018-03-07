@@ -1,0 +1,93 @@
+html, body {
+  font-size: 1.8vh; //Responsive font sizing
+  font-family: "Futura", sans-serif;
+  overflow: hidden;
+}
+
+
+em {
+  font-style: normal;
+  font-weight: bold;
+  color: red;
+}
+
+img { //Responsive image scaling
+  margin: 0% auto;
+  max-width: 100vw;
+  max-height: 100vh;
+  height: auto;
+  display: block;
+}
+
+#mainText, #timer { //Centering
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2em;
+}
+
+#mainText {
+  width: 100%; //For text zoom effects to properly expand to fill screen
+  text-align: center;
+}
+
+#myCanvas, #main, #mainText, #timer { //Responsive scaling
+  max-width: 100%;  
+  height: auto; 
+  max-height: 100%;
+}
+
+#s1, #scene, #p210, #p52, #p62 { //Scene numbers
+  font-size: 30vw; //Property vw scales better than %
+}
+
+#time, #adjectives { //Responsive centering of time
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+}
+
+.white, .para1 {
+  color: white;
+}
+
+#p47 {
+  font-size: 0.1em;
+}
+
+#pic1 img {
+  display: inline-block;
+}
+
+#contact {
+  display: none;
+  font-size: 2em;
+  text-align: center;
+  padding-top: 1%;
+  .columns {
+    font-size: 0.5em;
+    .panel-body {
+      text-align: left;
+    }
+  }
+  img {
+    max-width: 20%;
+  }
+}
+
+//Adapted: http://stackoverflow.com/questions/35122127/how-can-i-load-a-web-font-such-as-font-awesome-on-page-load and http://stackoverflow.com/questions/13249773/when-do-web-fonts-load-and-can-you-pre-load-them
+@font-face { //Preloads font faces to prevent the ugly rendering effect
+  font-family: "FontAwesome";
+  src: url("../fonts/fontawesome-webfont.eot?v=4.7.0");
+  src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0") format("embedded-opentype"),
+    url("../fonts/fontawesome-webfont.woff2?v=4.7.0") format("woff2"),
+    url("../fonts/fontawesome-webfont.woff?v=4.7.0") format("woff"),
+    url("../fonts/fontawesome-webfont.ttf?v=4.7.0") format("truetype"),
+    url("../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
